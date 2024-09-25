@@ -4,18 +4,15 @@ import axios from 'axios';
 export default class Product extends Component {
     constructor(props) {
         super(props);
-        // State ni to'g'ri uslubda aniqlash
         this.state = {
             product: {}
         };
     }
 
     componentDidMount() {
-        // ID ni olish uchun window.location'dan foydalanamiz
         const path = window.location.pathname;
         const id = path.substring(path.lastIndexOf('/') + 1);
 
-        // API chaqiriq qilish
         axios
             .get(`https://fakestoreapi.com/products/${id}`)
             .then((response) => {
