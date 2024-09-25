@@ -1,0 +1,11 @@
+#product {
+    cursor: pointer;
+}
+
+#product:hover {
+    border: 1px solid rgb(243, 149, 26) !important;
+}
+
+nav {
+    margin: 0 auto;
+}
