@@ -187,7 +187,7 @@ export class Products extends Component {
                     </div>
                 </div>
 
-                {/* Pagination */}
+
                 <nav aria-label="Page navigation example">
                     <ul className="pagination d-flex justify-content-center mt-3">
                         <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
